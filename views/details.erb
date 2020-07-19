@@ -8,3 +8,12 @@
 	</br>
 </p>
 	<br/>
+<h4>Comments:</h4>
+
+<form action="/details/<%= @row['id'] %>" method="POST" role="form">
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Add comment:</label>
+    <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="type your message here"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
